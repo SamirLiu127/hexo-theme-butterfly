@@ -59,3 +59,7 @@ div
   if (theme.google_tag_manager && theme.google_tag_manager.tag_id)
     noscript
       iframe(src=`${theme.google_tag_manager.domain ? theme.google_tag_manager.domain : 'https://www.googletagmanager.com'}/ns.html?id=${theme.google_tag_manager.tag_id}` height="0" width="0" style="display:none;visibility:hidden")
+
+  if (theme.google_tag_manager_server && theme.google_tag_manager_server.tag_id && theme.google_tag_manager_server.domain)
+    noscript
+      iframe(src=`${theme.google_tag_manager_server.domain}/ns.html?id=${theme.google_tag_manager_server.tag_id}` height="0" width="0" style="display:none;visibility:hidden")

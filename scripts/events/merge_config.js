@@ -392,6 +392,11 @@ hexo.extend.filter.register('before_generate', () => {
       tag_id: null,
       domain: 'https://www.googletagmanager.com'
     },
+    google_tag_manager_server: {
+      tag_id: null,
+      domain: null,
+      server_id: null
+    },
     baidu_analytics: null,
     google_analytics: null,
     cloudflare_analytics: null,

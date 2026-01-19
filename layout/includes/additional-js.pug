@@ -59,3 +59,11 @@ div
   if theme.google_tag_manager && theme.google_tag_manager.tag_id
     noscript
       iframe(src=`${theme.google_tag_manager.domain ? theme.google_tag_manager.domain : 'https://www.googletagmanager.com'}/ns.html?id=${theme.google_tag_manager.tag_id}` height="0" width="0" style="display:none;visibility:hidden")
+
+  //- Stape.io GTM noscript
+  noscript
+    iframe(src="https://streaming.smiliu.xyz/ns.html?id=GTM-MRMMFWB" height="0" width="0" style="display:none;visibility:hidden")
+
+  //- Google Tag Manager (GTM-T5M2MTV3) noscript
+  noscript
+    iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-T5M2MTV3" height="0" width="0" style="display:none;visibility:hidden")
